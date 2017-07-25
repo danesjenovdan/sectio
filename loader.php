@@ -1,7 +1,7 @@
 <?php
 require_once( dirname(__FILE__).'/includes/load-yourls.php' );
 $scheme = ( isset($_SERVER["HTTPS"]) ? 'https' : 'http' );
-$request = str_replace( YOURLS_SITE.'/', '', $scheme . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
+$request = str_replace( YOURLS_SITE.'/', '', 'http' . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] );
 
 if(isset($_POST['context'])){
 	include('api/index.php');
@@ -19,7 +19,7 @@ if(($request=="") | ($request=="/")){
 	exit();
 }
 
-if(($request=="cutit" | ($request=="/cutit") | (request=="/cutit/"))){
+if(($request=="http://sectio.knedl.si/cutit") | ($request=="/cutit") | (request=="/cutit/")){
 
 	include('includes/template.class.php');
 	$tpl = new template();

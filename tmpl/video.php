@@ -34,6 +34,8 @@ mixpanel.init("a2eb6f5021e365bcb003c6909948fbab");</script><!-- end Mixpanel -->
 			</div>
 		</header>
 		<div class="container">
+			data
+			<?php print_r($this->data); ?>
 			<input type="hidden" value="<?php print $this->data["url_c"]; ?>" id="url_c" />
 			<input type="hidden" value="<?php print $this->data["url_f"]; ?>" id="url_f" />
 
