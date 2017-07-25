@@ -19,7 +19,7 @@ if(($request=="") | ($request=="/")){
 	exit();
 }
 
-if(($request=="cutit")){
+if(($request=="cutit" | ($request=="/cutit") | (request=="/cutit/"))){
 
 	include('includes/template.class.php');
 	$tpl = new template();
