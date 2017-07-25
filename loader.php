@@ -8,9 +8,6 @@ if(isset($_POST['context'])){
 	exit();
 }
 
-
-
-
 if(($request=="") | ($request=="/")){
 	include('includes/template.class.php');
 	$tpl = new template();
@@ -19,8 +16,11 @@ if(($request=="") | ($request=="/")){
 	exit();
 }
 
-if(($request=="http://sectio.knedl.si/cutit") | ($request=="/cutit") | (request=="/cutit/")){
+// echo 'BEFORE';
 
+if(($request=="cutit") | ($request=="/cutit") | (request=="/cutit/")){
+	// echo 'testing';
+	// exit();
 	include('includes/template.class.php');
 	$tpl = new template();
 //var_dump($_POST);
@@ -31,6 +31,8 @@ if (($_GET['a'] == 'test')) {
 	$tpl->display('tmpl/video.php');
 	exit();
 }
+
+// echo 'AFTER';
 
 $part = explode('/', $request);
 switch($part[0]){
