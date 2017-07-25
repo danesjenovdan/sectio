@@ -1,0 +1,171 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author: sect.io team
+   ========================================================================== */
+
+@media only screen and (max-device-width: 480px) { /* CHANGE (cel blok dodan) */
+	#slider {
+		display: none;
+	}
+}
+
+.container {
+	padding-top: 3em;
+}
+
+.span4 {
+	widht: 293px !important; /* CHANGE */
+}
+
+header {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-image: url('../img/header_bck.png');
+}
+
+#videocontainer {
+	margin-bottom: 1em;
+}
+
+label {
+	color: #959595;
+	display: inline-block;
+	padding-right: 1em;
+}
+
+input,
+textarea {
+	display: inline-block;
+	color: #959595;
+	border-width: 2px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.timeinput {
+	width: 1.5em;
+	height: 1.5em;
+	position: relative;
+	top: -1em;
+/*	margin-bottom: 2em; NEW -> remove */
+}
+label { /* NEW */
+	position: relative;
+	top: -1em;
+}
+
+#startline { /* NEW */
+	margin-bottom: 29px;
+	height: 38px;
+}
+
+#endline { /* NEW */
+	margin-bottom: 29px;
+	height: 38px;
+}
+
+#startbutton {
+	width: 74px; /* CHANGE */
+	height: 38px; /* CHANGE */
+	display: inline-block;
+	background-image: url('../img/startsprite.png');
+	background-repeat: no-repeat; /* CHANGE */
+	margin-right: 50px; /* NEW */
+	background-position: 0% 0%;
+}
+
+#startbutton.on {
+	background-position: -77px 0px; /* CHANGE */
+}
+
+#endbutton {
+	width: 77px; /* CHANGE */
+	height: 38px; /* CHANGE */
+	display: inline-block;
+	background-image: url('../img/endsprite.png'); /* CHANGE (nov fajl) */
+	background-repeat: no-repeat; /* CHANGE */
+	margin-right: 47px; /* NEW */
+	background-position: 0% 0%;
+}
+
+#endbutton.on {
+	background-position: -78px 0px; /* CHANGE */
+}
+
+#loopit { /* NEW */
+	width: 76px;
+	height: 38px;
+	display: inline-block;
+	background-image: url('../img/loopsprite.png'); /* CHANGE (nov fajl) */
+	background-repeat: no-repeat; /* CHANGE */
+	margin-right: 47px; /* NEW */
+	background-position: 0% 0%;
+	margin-bottom: 29px;
+}
+
+#loopit.on {
+	background-position: -76px 0px; /* NEW */
+}
+
+#haveyoursay {
+	margin-bottom: 0.5em;
+	display: block;
+}
+
+#context {
+	resize: none;
+	height: 10em;
+	width: 280px;
+	display: block;
+}
+
+#cutit {
+	width: 293px !important; /* change */
+	display: block;
+}
+
+/* SLIDER */
+
+#slider {
+	margin-top: 1em;
+	padding-right: 27px;
+}
+
+.ui-slider {
+	border-width: 2px;
+	border-color: #CFCFCF;
+	border-radius: 7px;
+}
+
+.ui-slider-horizontal:nth-child(even) .ui-state-default:nth-child(even) {
+	background: transparent url('../img/startslidersprite.png') no-repeat scroll 0% 100%;
+	width: 27px;
+	height: 31px;
+	border: none;
+	top: -8px;
+}
+
+.ui-slider-horizontal:nth-child(even) .ui-state-default:nth-child(odd) {
+	background: transparent url('../img/stopslidersprite.png') no-repeat scroll 100% 0%;
+	width: 27px;
+	height: 31px;
+	border: none;
+	top: -7px;
+	padding-right: 27px;
+}
+
+.ui-slider-range {
+	background: #df4301 !important;
+	padding-right: 27px;
+}
+
+.ui-state-focus {
+	outline: none !important;
+}

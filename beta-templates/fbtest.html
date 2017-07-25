@@ -1,0 +1,59 @@
+<html>
+    <head>
+      <title>My Facebook Login Page</title>
+    </head>
+    <body>
+      <div id="fb-root"></div>
+      <a href="#" onclick="testis()">testis</a>
+      <script>
+      	function testis() {
+        window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '316368658432159',
+            status     : true, 
+            cookie     : true,
+            xfbml      : true,
+            oauth      : true,
+          });
+
+          FB.ui({ method: 'feed', 
+              method: 'feed',
+                        link: 'http://sectio.knedl.si/3d',
+                        picture: 'http://fbrell.com/f8.jpg',
+                        name: 'sect.io share',
+                        caption: 'This is sect.io!',
+                        description: 'Testiramo sect.io FB share',
+                        message: 'lalalalala',
+                        display: 'page'
+                        });
+                        
+        };
+
+        (function(d){
+           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+           js = d.createElement('script'); js.id = id; js.async = true;
+           js.src = "//connect.facebook.net/en_US/all.js";
+           d.getElementsByTagName('head')[0].appendChild(js);
+         }(document));
+        }
+      </script>
+		<script>
+		        window.fbAsyncInit = function() {
+		          FB.init({
+		            appId      : '316368658432159',
+		            status     : true, 
+		            cookie     : true,
+		            xfbml      : true,
+		            oauth      : true,
+		          });
+		        };
+		        (function(d){
+		           var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		           js = d.createElement('script'); js.id = id; js.async = true;
+		           js.src = "//connect.facebook.net/en_US/all.js";
+		           d.getElementsByTagName('head')[0].appendChild(js);
+		         }(document));
+		      </script>
+		      <div class="fb-login-button">Login with Facebook</div>
+    </body>
+ </html>

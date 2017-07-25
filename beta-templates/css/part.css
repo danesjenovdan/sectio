@@ -1,0 +1,124 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author: sect.io team
+   ========================================================================== */
+
+body::selection{background-color:#84ca7f;color:black;}
+
+.container {
+	padding-top: 3em;
+}
+
+.span4 {
+	width: 293px;
+}
+
+#cutyourown img { /* NEW */
+	width: 293px;
+	margin-top: 0.5em;
+}
+
+#replay img { /* NEW */
+	width: 293px;	
+	margin-top: 0.5em;
+}
+
+header {
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	background-image: url('../img/header_bck.png');
+}
+
+#about p {
+	color: #df4301;
+	font-style: italic;
+	text-indent: 3em;
+	font-weight: lighter;
+	line-height: 1.1em;
+}
+
+/* bubble text */
+.bubble p {
+	color: #939393;
+	text-indent: 3em;
+	font-family: Tahoma,Geneva,Kalimati,sans-serif;
+	line-height: 1.1em;
+}
+
+/* bubble */
+.bubble {
+	position:relative;
+	padding:15px;
+	margin:1em 0 3em;
+	background:#ececec;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+}
+
+/* triangle */
+.bubble:after {
+	content:"";
+	position:absolute;
+	bottom:-18px; /* value = - border-top-width - border-bottom-width */
+	left:30px; /* controls horizontal position */
+	border-width:18px 10px 0; /* vary these values to change the angle of the vertex */
+	border-style:solid;
+	border-color:#ececec transparent;
+    /* reduce the damage in FF3.0 */
+    display:block; 
+    width:0;
+}
+
+/* link box CHANGES */
+
+#link {
+	background: #ececec;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	text-align: center;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+#link img { /* CHANGE */
+	float: left;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+
+#copy {
+	padding-right: 1em;
+	padding-bottom: 1em;
+	float: right;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #939393;
+	display: block;
+}
+
+#shortened {
+	color: #df4301;
+	background-color: #ffffff;
+	display: block;
+	margin: auto;
+	margin-top: 3px; /* CHANGE */
+	/* CHANGE (odstranjen padding top/bottom) */ 
+	text-align: center;
+	width: 80%; /* CHANGE */
+	height: 32px; /* CHANGE */
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	border-width: 1px;
+	border-color: #939393;
+	border-style: solid;
+	font-size: 1.3em;
+ 	line-height: 32px; /* CHANGE */
+	-moz-box-shadow:    1px 1px 1px 1px #cecece;
+	-webkit-box-shadow: 1px 1px 1px 1px #cecece;
+	box-shadow:         1px 1px 1px 1px #cecece;
+}

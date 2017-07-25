@@ -1,0 +1,53 @@
+
+
+/* ===== Primary Styles ========================================================
+   Author: sect.io team
+   ========================================================================== */
+
+body {
+	background-image: url('../img/ilustracija.png'); /* CHANGE (prej smo imeli drugo sliko ilustracija_cela.png */
+	background-position: center 15em;
+	background-repeat: no-repeat;
+}
+
+#header {
+	text-align: center;
+	padding-top: 3em;
+}
+
+#getit {
+	margin-left: 15px; /* CHANGE */
+}
+
+#url {
+	width: 50%; /* CHANGE */
+	height: 28px;
+	margin-top: 10px; /* CHANGE */
+}
+
+@media only screen and (min-width: 1024px) {
+	#url {
+		width: 705px;
+	}
+}
+
+#centre {
+	text-align: center;
+	margin-top: 5em;
+	margin-bottom: 18%;
+}
+
+footer {
+	position: absolute;
+	bottom: 10px;
+}
+
+input,
+textarea {
+	color: #959595;
+	border-width: 2px;
+}
+
+#call {
+	text-align: center;
+}
